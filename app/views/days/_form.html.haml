@@ -1,0 +1,11 @@
+= simple_form_for day do |f|
+  - if day.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(day.errors.count, "error")} prohibited this day from being saved:"
+      %ul
+        - day.errors.full_messages.each do |msg|
+          %li= msg
+
+  = f.input :content, as: :text
+  .actions
+    = f.submit 'Save'

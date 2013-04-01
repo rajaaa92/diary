@@ -1,0 +1,15 @@
+en:
+  hello: "Hello world"
+
+  datetime:
+    formats:
+      default: "%Y-%m-%d %H:%M"
+      full: "%d %B %Y"
+  date:
+    formats:
+      default: "%Y-%m-%d"
+      full: "%d %B %Y"
+  time:
+    formats:
+      default: "%H:%M"
+
