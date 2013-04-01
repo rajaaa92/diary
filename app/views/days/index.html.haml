@@ -11,19 +11,3 @@
       = day_field(days.first, field)
       %ul
         %li= day_text(days.first)
-
-%hr
-
-%table
-  - days.each do |day|
-    %tr
-      %td= day.created_at.to_date
-      %td= day.content
-      %td= link_to 'Show', day_path(day)
-      %td= link_to 'Edit', edit_day_path(day)
-      %td= link_to 'Destroy', day, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Day', new_day_path
-

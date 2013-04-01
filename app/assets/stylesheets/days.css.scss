@@ -4,6 +4,9 @@
 
 .container {
   height: 100%;
+  width: 100%;
+  background-image: url(/assets/background2.jpg);
+  background-size: 100%;
 }
 
 form {
@@ -11,12 +14,24 @@ form {
 }
 
 .input {
-  height: 100%;
+  height: 90%;
 }
 
 textarea.day-input {
-  width: 100%;
-  height: 95%;
+  width: 90%;
+  height: 100%;
   resize: none;
   border: 0px;
+  position: relative;
+  left: 5%;
+}
+
+h1#day {
+  text-align: center;
+}
+
+.actions {
+  position: relative;
+  top: 5%;
+  left: 7%;
 }

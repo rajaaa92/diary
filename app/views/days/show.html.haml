@@ -1,6 +1,8 @@
-%p#notice= notice
+.container.center
+  %h1#day.well=l day.created_at.to_date, format: :full
 
-= render 'page'
+  = simple_form_for day do |f|
+    = f.input :content, as: :text, label: false, disabled: true, input_html: { class: "day-input" }
 
 = link_to 'Edit', edit_day_path(day)
 \|
