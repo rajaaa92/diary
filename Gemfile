@@ -2,26 +2,22 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
 
-# Asset template engines
-gem 'sass-rails'
+gem 'bson_ext'
 gem 'coffee-script'
-gem 'uglifier'
-gem 'haml-rails'
 gem 'decent_exposure'
-gem 'simple_form'
+gem 'haml-rails'
+gem 'jquery-rails'
+gem 'mongoid'
 gem 'pry-rails'
 gem 'pry-remote'
-
-gem 'jquery-rails'
-
-# mongo drivers
-gem 'mongoid'
-gem 'bson_ext'
+gem 'sass-rails'
+gem "simple_calendar"
+gem 'simple_form'
+gem 'uglifier'
 
 group :test do
+  gem "factory_girl"
   gem "rspec"
   gem "rspec-rails"
-  gem "factory_girl"
-  # Pretty printed test output
   gem 'turn', :require => false
 end
