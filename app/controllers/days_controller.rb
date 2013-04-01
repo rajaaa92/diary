@@ -1,6 +1,7 @@
 class DaysController < ApplicationController
   expose(:day)
   expose(:days)
+  expose(:date) { params[:month] ? Date.parse(params[:month]) : Date.today }
 
   def index
   end

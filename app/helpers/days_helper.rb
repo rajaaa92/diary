@@ -9,6 +9,10 @@ module DaysHelper
     date > Date.today || (date < Date.today && day.nil?) ? date.day : day_link(day)
   end
 
+  def day_text day
+    truncate(day.content, separator: ' ') if day.present?
+  end
+
   private
 
   def show day
