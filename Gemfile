@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
 
+gem 'bootstrap-sass'
 gem 'bson_ext'
 gem 'coffee-script'
 gem 'decent_exposure'
@@ -11,9 +12,9 @@ gem 'mongoid'
 gem 'pry-rails'
 gem 'pry-remote'
 gem 'sass-rails'
-gem "simple_calendar"
 gem 'simple_form'
 gem 'uglifier'
+gem "watu_table_builder", :require => "table_builder"
 
 group :test do
   gem "factory_girl"

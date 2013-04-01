@@ -12,3 +12,13 @@
 %br
 
 = link_to 'New Day', new_day_path
+
+%hr
+
+= calendar_for(days) do |calendar|
+  = calendar.head('mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun')
+  = calendar.day(day_method: :created_at) do |date, days|
+    = date.day
+    - days.each do |day|
+      = h(days.first.content)
+

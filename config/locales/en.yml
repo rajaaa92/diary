@@ -9,6 +9,7 @@ en:
     formats:
       default: "%Y-%m-%d"
       full: "%d %B %Y"
+      day: "%d"
   time:
     formats:
       default: "%H:%M"
