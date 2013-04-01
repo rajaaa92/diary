@@ -2,8 +2,7 @@
   = calendar_for(days) do |calendar|
     = calendar.head('mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun')
     = calendar.day(day_method: :created_at) do |date, days|
-      = date.day
-      = link_to days.first.try(:content), days.first if days.first.present?
+      = day_field(days.first, date)
 
 %hr
 
