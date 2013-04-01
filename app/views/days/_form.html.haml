@@ -6,6 +6,6 @@
         - day.errors.full_messages.each do |msg|
           %li= msg
 
-  = f.input :content, as: :text
+  = f.input :content, as: :text, label: false, input_html: { class: "day-input" }
   .actions
     = f.submit 'Save'

@@ -1,10 +1,6 @@
-%h1= l(day.created_at.to_date, format: :full)
-
 %p#notice= notice
 
-%p
-  = day.content
-
+= render 'page'
 
 = link_to 'Edit', edit_day_path(day)
 \|
