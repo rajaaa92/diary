@@ -73,6 +73,9 @@ GEM
       moped (~> 1.4.2)
       origin (~> 1.0)
       tzinfo (~> 0.3.22)
+    mongoid_taggable (1.1.1)
+      mongoid (>= 3)
+      rake
     moped (1.4.5)
     multi_json (1.7.2)
     origin (1.0.11)
@@ -165,6 +168,7 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   mongoid
+  mongoid_taggable
   pry-rails
   pry-remote
   rails (= 3.2.12)

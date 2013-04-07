@@ -13,12 +13,13 @@ gem 'pry-rails'
 gem 'pry-remote'
 gem 'sass-rails'
 gem 'simple_form'
+gem 'mongoid_taggable'
 gem 'uglifier'
-gem "watu_table_builder", :require => "table_builder"
+gem "watu_table_builder", require: "table_builder"
 
 group :test do
   gem "factory_girl"
   gem "rspec"
   gem "rspec-rails"
-  gem 'turn', :require => false
+  gem 'turn', require: false
 end
