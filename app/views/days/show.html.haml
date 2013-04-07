@@ -2,6 +2,7 @@
   %h1#day.well=l header.to_date, format: :full
 
   = simple_form_for day do |f|
+    = f.input :tags, label: false, disabled: true, input_html: { class: "tags-input" }
     = f.input :content, as: :text, label: false, disabled: true, input_html: { class: "day-input" }
 
 = link_to 'Edit', edit_day_path(day)

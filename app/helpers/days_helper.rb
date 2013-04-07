@@ -10,7 +10,7 @@ module DaysHelper
   end
 
   def day_text day
-    truncate(day.content, separator: ' ') if day.present?
+    day.tags_array.join(", ") if day.present?
   end
 
   private
