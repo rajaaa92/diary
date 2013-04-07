@@ -1,4 +1,5 @@
 = simple_form_for day do |f|
   = f.input :content, as: :text, label: false, input_html: { class: "day-input" }
+  = f.input :tags, label: false, input_html: { class: "tags-input" }
   .actions
     = f.submit 'Save'
