@@ -5,7 +5,7 @@
     = h date.strftime("%B %Y")
     = link_to ">", month: (date.end_of_month + 1).strftime("%Y-%m-01")
 
-  = calendar_for days, year: date.year, month: date.month do |calendar|
+  = calendar_for days, year: date.year, month: date.month, first_day_of_week: 1 do |calendar|
     = calendar.head('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday')
     = calendar.day(day_method: :created_at) do |field, days|
       = day_field(days.first, field)
