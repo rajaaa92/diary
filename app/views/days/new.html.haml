@@ -1,5 +1,6 @@
-%h1 New day
+.container.center
+  %h1#day.well=l header.to_date, format: :full
 
-= render 'form'
+  = render 'form'
 
 = link_to 'Back', days_path
