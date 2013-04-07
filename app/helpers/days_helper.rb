@@ -24,7 +24,7 @@ module DaysHelper
   end
 
   def new_day
-    link_to l(Date.today, format: :day), new_day_path
+    link_to l(Date.today, format: :day), new_day_path(header: Date.today)
   end
 
 end
