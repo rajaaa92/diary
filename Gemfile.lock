@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/rajaaa92/lock.git
+  revision: 79ab6a842a22fbe69a4f2820f9e2a2d9cbdf151c
+  specs:
+    lock (0.1.0)
+      bcrypt-ruby
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -30,6 +37,9 @@ GEM
       multi_json (~> 1.0)
     ansi (1.4.3)
     arel (3.0.2)
+    bcrypt (3.1.7)
+    bcrypt-ruby (3.1.5)
+      bcrypt (>= 3.1.3)
     bootstrap-sass (2.3.1.0)
       sass (~> 3.2)
     bson (1.8.4)
@@ -167,6 +177,7 @@ DEPENDENCIES
   factory_girl
   haml-rails
   jquery-rails
+  lock!
   mongoid
   mongoid_taggable
   pry-rails

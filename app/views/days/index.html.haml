@@ -1,13 +1,16 @@
-#calendar
+.container.center
+  %h2#month.well
+    %center
+      = link_to "<", month: (date.beginning_of_month - 1).strftime("%Y-%m-01")
+      = h date.strftime("%B %Y")
+      = link_to ">", month: (date.end_of_month + 1).strftime("%Y-%m-01")
 
-  %h2#month
-    = link_to "<", month: (date.beginning_of_month - 1).strftime("%Y-%m-01")
-    = h date.strftime("%B %Y")
-    = link_to ">", month: (date.end_of_month + 1).strftime("%Y-%m-01")
+  #calendar
+    = calendar_for days, year: date.year, month: date.month, first_day_of_week: 1 do |calendar|
+      = calendar.head('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday')
+      = calendar.day(day_method: :created_at) do |field, days|
+        = day_field(days.first, field)
+        %ul
+          %li= day_text(days.first)
 
-  = calendar_for days, year: date.year, month: date.month, first_day_of_week: 1 do |calendar|
-    = calendar.head('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday')
-    = calendar.day(day_method: :created_at) do |field, days|
-      = day_field(days.first, field)
-      %ul
-        %li= day_text(days.first)
+    = link_to "lock app", lock_path, class: 'btn btn-default btn-small'
