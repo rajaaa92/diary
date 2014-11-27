@@ -3,5 +3,3 @@
 It's an online diary. The start page is a page from the calendar - to open a diary page, click on a date. 
 You can also lock the diary with a password and add tags to every day.
 Tags are showed in the calendar page so you can easily browse your pages.
-
-I'm going to develope this project in the future.
